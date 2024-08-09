@@ -13,5 +13,7 @@ Submission of multi-fasta file containing cox1 sequences to [BOLDigger2](https:/
 
 
 ## BOLDigger2 multi-fasta prep script (1_BD2_prep.py)
-Integrated into boldigger.sh (must be in same directory as boldigger.sh). Prepares multi-fasta file containing cox1 sequences by cleaning sequence headers, removing headers if no sequence is present, removing leading and trailing invalid characters (e.g. '-' and '~'), converting 'internal' invalid characters to 'Ns', and removing sequences <80bp. Script will append 'cleaned_' to start of input cox1.fasta file, which will be used for submission to BOLDigger2.
+- Integrated into boldigger.sh (must be in same directory as boldigger.sh).
+- Prepares multi-fasta file containing cox1 sequences by cleaning sequence headers, removing headers if no sequence is present, removing leading and trailing invalid characters (e.g. '-' and '~'), converting 'internal' invalid characters to 'Ns', and removing sequences <80bp.
+- Will append 'cleaned_' to start of input cox1.fasta file, which will be used for submission to BOLDigger2.
 
